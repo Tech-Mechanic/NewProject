@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <title>Produk</title>
+
+    <link rel="icon" type="assets/image/png" href="assets\img\logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet"
+        href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <!-- Scroll Smooth -->
+    <script src="assets\smooth-scroll-master\dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 750,
+            speedAsDuration: true
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 500);
+        }); 
+    </script>
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+
+    {{!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> --}}
+
+</head>
+
+<body style="background-color: #F2F2F2; ">
+    <!-- Scroll -->
+
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: rgb(53, 53, 53);">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Tech Mechanic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+            </div>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 bg-dark">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+
+    </nav>
+
+    <section id="team" class="team" style="background-color: #F2F2F2;">
+        <div class="container">
+
+            <div class="section-title mt-5 mb-5">
+                <h2 style="text-align: center;font-family: Roboto;">Etalase Toko</h2>
+                <p style="margin-top: 25px; margin-bottom: 25px;"></p>
+            </div>
+
+            <div class="container p-4">
+                <div class="row">
+
+                    {{#each produk}}
+                    <div class="col-md-4">
+                        <div class="card text-center mb-4">
+                            <div class="card-body">
+                                <img src="/assets/img/produk.jpg" class="card-img-top" alt="Card image cap">
+                                <h3 class="card-title text-uppercase">
+                                    {{nama_product}}
+                                </h3>
+
+                                <p class="m-2">
+                                    {{harga_product}}
+                                </p>
+                                <a class=" btn tombol"
+                                    style=" background-color : #C9B60B; font-size: 20px;font-family: Roboto;color: white;"
+                                    href="/detail_product">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
