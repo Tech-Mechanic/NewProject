@@ -1,0 +1,233 @@
+.carousel-caption {
+    position: absolute;
+   top:50%
+}
+
+.tombol{
+	border-radius: 40px;
+	display: inline-block;
+}
+.borderrad{
+	border-radius: 30px;
+}
+
+.bg-dark1 {
+	background:transparent !important;
+	transition:0.75s ease;
+}
+.bg-dark1.scrolled {
+	background:rgb(53, 53, 53) !important;
+}
+.carousel-item{
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.carousel-caption h5{
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: Roboto;
+}
+
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 19px;
+	line-height: 2.0;
+	font-family: Roboto;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #C9B60B;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+.navbar-nav a {
+	font-family: Roboto;
+	font-size: 19px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.navbar-light .navbar-brand{
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: #fff;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+	margin-right: 30px;
+}
+
+
+.nav-link:hover::after{
+	content: '';
+	display: block;
+	border-bottom: 3px solid #C9B60B;
+	width: 50%;
+	margin: auto;
+	padding-bottom: 5px;
+	margin-bottom: -8px;
+}
+
+
+.nav-link.active, .nav-link:focus{
+	color: #fff !important;
+}
+
+.w-100{
+	height: 100vh;
+}
+
+.aboutme{
+    margin-top: 120px;
+}
+
+.aboutme h3{
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: uppercase;
+	margin-top: 25px;
+	font-family: Roboto;
+}
+
+.aboutme h3 span{
+    font-weight: 500;
+}
+
+.aboutme p{
+font-size: 18px;
+color: darkgray;
+font-weight: 200px;
+margin: 25px 0;
+}
+
+/*--------------------------------------------------------------
+# Our Team
+--------------------------------------------------------------*/
+.team {
+	background: #fff;
+	padding: 60px 0;
+  }
+  
+  .team .member {
+	text-align: center;
+	margin-bottom: 20px;
+	background: #343a40;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .team .member .member-info {
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 0.2s;
+  }
+  
+  .team .member .member-info-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	transition: bottom 0.4s;
+  }
+  
+  .team .member .member-info-content h4 {
+	font-weight: 700;
+	margin-bottom: 2px;
+	font-size: 18px;
+	color: #fff;
+  }
+  
+  .team .member .member-info-content span {
+	font-style: italic;
+	display: block;
+	font-size: 13px;
+	color: #fff;
+  }
+  
+  .team .member .social {
+	position: absolute;
+	left: 0;
+	bottom: -38px;
+	right: 0;
+	height: 48px;
+	transition: bottom ease-in-out 0.4s;
+	text-align: center;
+  }
+  
+  .team .member .social a {
+	transition: color 0.3s;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+  }
+  
+  .team .member .social a:hover {
+	color: #1bbca3;
+  }
+  
+  .team .member .social i {
+	font-size: 18px;
+	margin: 0 2px;
+  }
+  
+  .team .member:hover .member-info {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+	opacity: 1;
+	transition: 0.4s;
+  }
+  
+  .team .member:hover .member-info-content {
+	bottom: 60px;
+	transition: bottom 0.4s;
+  }
+  
+  .team .member:hover .social {
+	bottom: 0;
+	transition: bottom ease-in-out 0.4s;
+  }
+
+
+@media only screen adn (max-width:; 767px){
+	.navbar-nav.ml-auto{
+		background: rgba(0,0,0,0.5);
+	}
+	.navbar-toggler{
+		padding: 1px 5px;
+		font-size: 19px;
+		line-height: 0.3;
+		background: #fff;
+	}
+}
+
+
+
+
+
+
+
+
+
